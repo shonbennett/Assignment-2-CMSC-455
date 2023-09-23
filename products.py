@@ -29,7 +29,7 @@ def get_product(product_id):
     if product:
         return jsonify({"product":product})
     else:
-        return jsonify({"error": "Product not found (Shon)"}), 404
+        return jsonify({"error": "Product ID entered does not exist"}), 404
 
 #Endpoint adds a specified amount to the user's cart while taking the specified amount away from the product service's inventory  
 @app.route('/products', methods=['POST']) 
