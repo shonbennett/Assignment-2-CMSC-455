@@ -6,7 +6,7 @@ from flask import Flask, jsonify, request
 import requests
 
 # this creates a Flask web app object called app; initailized with name of current module (makes the root path of the app)  
-app = Flask(__name__)
+app = Flask("Product Service")
 
 #Sample inventory to begin with (a list of dictionaries)
 products = [
